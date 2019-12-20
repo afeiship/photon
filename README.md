@@ -14,3 +14,6 @@ npm i -S @feizheng/photon
 // use css
 @import '@feizheng/photon/dist/css/photon.css';
 ```
+
+## resources
+- http://photonkit.com/
