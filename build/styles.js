@@ -7,14 +7,20 @@
     pattern: ['gulp-*', 'gulp.*', 'del', '@feizheng/gulp-*']
   });
 
-  gulp.task('styles', function() {
+  gulp.task('styles:css', function() {
     return gulp
       .src('src/photon.scss')
       .pipe($.feizheng.pkgHeader())
       .pipe($.sass({ outputStyle: 'expanded' }).on('error', $.sass.logError))
-      .pipe(gulp.dest('dist'))
+      .pipe(gulp.dest('dist/css'))
       .pipe($.sass({ outputStyle: 'compressed' }).on('error', $.sass.logError))
       .pipe($.rename({ extname: '.min.css' }))
-      .pipe(gulp.dest('dist'));
+      .pipe(gulp.dest('dist/css'));
+  });
+
+  gulp.task('styles:sass', function() {
+    return gulp
+      .src('src/**')
+      .pipe(gulp.dest('dist/sass'));
   });
 })();
