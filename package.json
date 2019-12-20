@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/photon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Photon sass/css for npm.",
   "homepage": "https://github.com/afeiship/photon",
   "author": {
@@ -11,7 +11,7 @@
     "build": "gulp",
     "version": "gulp bump"
   },
-  "main": "dist/css/photon.scss",
+  "main": "dist/css/photon.css",
   "license": "MIT",
   "devDependencies": {
     "@feizheng/gulp-pkg-header": "^1.0.2",
