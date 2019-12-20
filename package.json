@@ -1,5 +1,5 @@
 {
-  "name": "photon",
+  "name": "@feizheng/photon",
   "version": "1.0.0",
   "description": "Photon sass/css for npm.",
   "homepage": "https://github.com/afeiship/photon",
@@ -28,5 +28,8 @@
     "gulp-uglify": "^3.0.2",
     "next-nice-comments": "github:afeiship/next-nice-comments",
     "uglify-save-license": "^0.4.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
